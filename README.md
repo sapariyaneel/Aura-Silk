@@ -27,7 +27,7 @@
 
 ## 📋 Overview
 
-**Aura & Silk** is a sophisticated full-stack e-commerce platform designed for ethnic fashion retail. Built with modern technologies, it delivers a seamless shopping experience across web and mobile platforms with real-time synchronization, secure payments, and intelligent notifications.
+**Aura & Silk** is a sophisticated full-stack e-commerce platform designed for ethnic fashion retail. Built with modern technologies, it delivers a seamless shopping experience across web and mobile platforms with real-time synchronization, secure payments, intelligent caching, and smart notifications. Now featuring enhanced UX with skeleton loaders, improved cart management, and dynamic content organization.
 
 > [!IMPORTANT]
 > This is a **private project**. Source code is not publicly available. This repository serves as a deployment and release hub.
@@ -90,19 +90,21 @@ graph LR
 
 - **Advanced Search Engine** - Fast, intelligent product discovery
 - **Smart Filtering** - Category, size, price, and availability filters
-- **Dynamic Catalog** - Real-time inventory updates
-- **High-Quality Imagery** - Multiple product images with zoom
-- **Detailed Information** - Size charts, descriptions, and specifications
+- **Dynamic Categories** - Flexible, real-time category organization
+- **High-Quality Imagery** - Multiple product images with swipe navigation
+- **Detailed Information** - Comprehensive size guides, descriptions, and specifications
+- **Featured & Essentials** - Curated product collections for quick discovery
 
 ### Shopping Experience
 
 | Feature | Description |
 |---------|-------------|
-| 🛒 **Smart Cart** | Cross-device synchronization with persistent storage |
+| 🛒 **Smart Cart** | Cross-platform synchronization with real-time updates |
 | 💳 **Flexible Payments** | Cash on Delivery + Razorpay online payments |
-| 🔒 **Secure Checkout** | Encrypted payment processing with verification |
+| 🔒 **Secure Checkout** | Encrypted payment with quantity controls |
 | 📦 **Order Tracking** | Real-time status updates and notifications |
 | 👤 **Guest Checkout** | Shop without mandatory registration |
+| ⚡ **Buy Now** | Direct purchase without cart interference |
 
 ### Account Management
 
@@ -125,20 +127,25 @@ graph LR
 - Invoice download
 
 **📍 Address Book**
-- Multiple delivery addresses
-- Default address selection
-- Easy address editing
+- Save multiple delivery addresses
+- Quick address selection at checkout
+- Easy address management and editing
+- Default address configuration
 - Delivery tracking integration
 
 ### Mobile-Exclusive Features
 
 > **💡 TIP:** The Android app provides enhanced features for on-the-go shopping
 
-- **Native Performance** - Smooth 60 FPS animations
-- **Offline Capability** - Cart persists without internet
+- **Native Performance** - Smooth 60 FPS animations with skeleton loaders
+- **Intelligent Caching** - Faster load times and improved offline experience
+- **Offline Capability** - Cart persists without internet connection
 - **Push Notifications** - Order updates and promotional alerts
 - **Haptic Feedback** - Tactile responses for actions
 - **Deep Linking** - Direct navigation to products
+- **Featured Collections** - Quick access to featured and essential products
+- **Editorial Content** - Fashion tips, trends, and brand stories
+- **Contact Integration** - Easy customer support access
 
 </details>
 
@@ -333,11 +340,13 @@ RN WebView          // Payment UI
 ├── Code Splitting
 ├── Lazy Loading
 ├── CDN Delivery
-└── Caching Strategy
+├── Skeleton Loaders
+└── Advanced Caching Strategy
 
 📱 Mobile Performance
 ├── Native Compilation
 ├── 60 FPS Animations
+├── Intelligent Caching
 ├── Optimized Bundle Size
 ├── Efficient State Updates
 └── Memory Management
@@ -459,7 +468,7 @@ graph TB
 
 ### **Neel Sapariya**
 
-**Full-Stack Developer • Solo Project**
+**Full-Stack & Mobile App Developer • Solo Project**
 
 **Built entirely by one developer - from concept to deployment**
 
@@ -497,7 +506,7 @@ For business inquiries or collaboration opportunities, please reach out via the 
 **Built with Precision, Passion, and Modern Technology**
 <br/>
 <br/>
-[![Version](https://img.shields.io/badge/Version-1.0.0+-success?style=flat-square)](../../releases)
+[![Version](https://img.shields.io/badge/Version-1.1.0+-success?style=flat-square)](../../releases)
 [![Status](https://img.shields.io/badge/Status-Production-success?style=flat-square)](#)
 [![Platform](https://img.shields.io/badge/Platform-Web%20%26%20Android-blue?style=flat-square)](#)
 </div>
