@@ -27,7 +27,7 @@
 
 ## 📋 Overview
 
-**Aura & Silk** is a sophisticated full-stack e-commerce platform designed for ethnic fashion retail. Built with modern technologies, it delivers a seamless shopping experience across web and mobile platforms with real-time synchronization, secure payments, intelligent caching, and smart notifications. Now featuring enhanced UX with skeleton loaders, improved cart management, and dynamic content organization.
+**Aura & Silk** is a sophisticated full-stack e-commerce platform designed for ethnic fashion retail. Built with modern technologies, it delivers a seamless shopping experience across web and mobile platforms with real-time synchronization, secure payments, intelligent caching, and smart notifications. Now featuring native Google OAuth login, OTP-based security, enhanced UX with skeleton loaders, and dynamic content organization.
 
 > [!IMPORTANT]
 > This is a **private project**. Source code is not publicly available. This repository serves as a deployment and release hub.
@@ -109,14 +109,18 @@ graph LR
 ### Account Management
 
 **🔐 Authentication**
-- Secure login with email verification
-- Password reset functionality
-- Session management
-- Two-factor authentication ready
+- Native Google OAuth login (one-tap sign-in)
+- Traditional email/password authentication
+- OTP-based password recovery system
+- Secure email verification
+- Smart session management
+- Enhanced security with email OTP
 
 **👤 Profile Management**
+- Fully responsive profile page (all devices)
 - Avatar upload and customization
 - Personal information updates
+- Google account linking
 - Security settings control
 - Account deletion option
 
@@ -137,7 +141,8 @@ graph LR
 
 > **💡 TIP:** The Android app provides enhanced features for on-the-go shopping
 
-- **Native Performance** - Smooth 60 FPS animations with skeleton loaders
+- **Native Performance** - Smooth 60 FPS animations with optimized skeleton loaders
+- **Google OAuth Login** - Quick sign-in with your Gmail account
 - **Intelligent Caching** - Faster load times and improved offline experience
 - **Offline Capability** - Cart persists without internet connection
 - **Push Notifications** - Order updates and promotional alerts
@@ -313,6 +318,8 @@ RN WebView          // Payment UI
 🛡️ Application Security
 ├── Row Level Security (RLS)
 ├── JWT Authentication
+├── Google OAuth 2.0
+├── Email OTP Verification
 ├── HTTPS Encryption
 ├── Password Hashing (bcrypt)
 ├── CSRF Protection
@@ -506,7 +513,7 @@ For business inquiries or collaboration opportunities, please reach out via the 
 **Built with Precision, Passion, and Modern Technology**
 <br/>
 <br/>
-[![Version](https://img.shields.io/badge/Version-1.1.0+-success?style=flat-square)](../../releases)
+[![Version](https://img.shields.io/badge/Version-1.2.0+-success?style=flat-square)](../../releases)
 [![Status](https://img.shields.io/badge/Status-Production-success?style=flat-square)](#)
 [![Platform](https://img.shields.io/badge/Platform-Web%20%26%20Android-blue?style=flat-square)](#)
 </div>
