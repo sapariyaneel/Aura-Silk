@@ -27,7 +27,7 @@
 
 ## 📋 Overview
 
-**Aura & Silk** is a sophisticated full-stack e-commerce platform designed for ethnic fashion retail. Built with modern technologies, it delivers a seamless shopping experience across web and mobile platforms with real-time synchronization, secure payments, intelligent caching, and smart notifications. Featuring native Google OAuth login, OTP-based security, full tablet responsiveness, dynamic sizing, and premium theme-matched UI components.
+**Aura & Silk** is a sophisticated full-stack e-commerce platform designed for ethnic fashion retail. Built with modern technologies, it delivers a seamless shopping experience across web and mobile platforms with real-time synchronization, secure payments, intelligent caching, and smart notifications. Featuring native Google OAuth login, OTP-based security, full tablet responsiveness, product sharing with verified app links, native invoice downloads, and smart stock management.
 
 > [!IMPORTANT]
 > This is a **private project**. Source code is not publicly available. This repository serves as a deployment and release hub.
@@ -60,9 +60,11 @@
 - 💾 Offline Cart Storage
 - 🔔 Push Notifications
 - 📳 Haptic Feedback
-- 🔗 Deep Linking
+- 🔗 Verified App Links
 - 📱 Full Tablet Support
 - 🎨 Theme-Matched UI
+- 📄 Native Invoice Downloads
+- 🔄 Product Sharing
 
 **Requirements:** Android 5.0+ • 50MB Storage
 
@@ -101,12 +103,13 @@ graph LR
 
 | Feature | Description |
 |---------|-------------|
-| 🛒 **Smart Cart** | Cross-platform synchronization with real-time updates |
+| 🛒 **Smart Cart** | Cross-platform sync with real-time stock validation |
 | 💳 **Flexible Payments** | Cash on Delivery + Razorpay online payments |
-| 🔒 **Secure Checkout** | Encrypted payment with quantity controls |
+| 🔒 **Secure Checkout** | Stock-validated checkout with quantity controls |
 | 📦 **Order Tracking** | Real-time status updates and notifications |
 | 👤 **Guest Checkout** | Shop without mandatory registration |
 | ⚡ **Buy Now** | Direct purchase without cart interference |
+| 🔄 **Product Sharing** | Share products with verified app links |
 
 ### Account Management
 
@@ -120,18 +123,18 @@ graph LR
 
 **👤 Profile Management**
 - Fully responsive profile page (all devices)
-- Avatar upload and customization
+- Avatar upload with default fallback
 - Personal information updates
 - Google account linking
 - Security settings control
-- Account deletion option
+- OTP-verified account deletion
 
 **📦 Order Management**
 - Redesigned order details page
 - Complete order history
 - Real-time status tracking
 - Quick reorder functionality
-- Invoice download
+- Native invoice PDF downloads
 
 **📍 Address Book**
 - Save multiple delivery addresses
@@ -149,11 +152,14 @@ graph LR
 - **Full Tablet Support** - Responsive design across all screen sizes
 - **Dynamic Sizing** - Real-time size sync from admin panel
 - **Smart Updates** - Detects downloaded APKs for faster installs
+- **Product Sharing** - Share products with verified Android app links
+- **Native Invoice Downloads** - PDFs download directly to Downloads folder
+- **Stock Validation** - Real-time stock checks in cart and checkout
 - **Intelligent Caching** - Faster load times and improved offline experience
 - **Offline Capability** - Cart persists without internet connection
 - **Push Notifications** - Order updates and promotional alerts
 - **Haptic Feedback** - Tactile responses for actions
-- **Deep Linking** - Direct navigation to products
+- **SEO-Friendly URLs** - Clean product links with slug support
 - **Featured Collections** - Quick access to featured and essential products
 - **Editorial Content** - Fashion tips, trends, and brand stories
 - **Contact Integration** - Easy customer support access
@@ -520,7 +526,7 @@ For business inquiries or collaboration opportunities, please reach out via the 
 **Built with Precision, Passion, and Modern Technology**
 <br/>
 <br/>
-[![Version](https://img.shields.io/badge/Version-1.3.0+-success?style=flat-square)](../../releases)
+[![Version](https://img.shields.io/badge/Version-1.4.0+-success?style=flat-square)](../../releases)
 [![Status](https://img.shields.io/badge/Status-Production-success?style=flat-square)](#)
 [![Platform](https://img.shields.io/badge/Platform-Web%20%26%20Android-blue?style=flat-square)](#)
 </div>
